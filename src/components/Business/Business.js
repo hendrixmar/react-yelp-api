@@ -13,27 +13,27 @@ const business = {
     rating: 4.5,
     reviewCount: 90
 }
-
+//<img src={business.imageSrc} alt=''/>
 class Business extends React.Component{
     render(){
-        <div class="Business">
-            <div class="image-container">
-                <img src={business.imageSrc} alt=''/>
-            </div>
-            <h2>{business.name}</h2>
-            <div class="Business-information">
-                <div class="Business-address">
-                <p>{business.address}</p>
-                <p>{business.city}</p>
-                <p>{business.state} {business.zipCode}</p>
+        return (<div class="Business">
+                <div class="image-container">
+                    
                 </div>
-                <div class="Business-reviews">
-                    <h3>{business.category}</h3>
-                <h3 class="rating">{business.rating} stars</h3>
-                <p>{business.reviewCount}</p>
+                <h2>{business.name}</h2>
+                <div class="Business-information">
+                    <div class="Business-address">
+                    <p>{business.address}</p>
+                    <p>{business.city}</p>
+                    <p>{business.state} {business.zipCode}</p>
+                    </div>
+                    <div class="Business-reviews">
+                        <h3>{business.category}</h3>
+                    <h3 class="rating">{business.rating} stars</h3>
+                    <p>{business.reviewCount}</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>);
     }
 }
 

@@ -20,6 +20,20 @@ c8qhziAQNNpFhArSbb_XyGKxfAE9r2I6QZX6i4UDeH6s8_n5KGyHcEZZZGlK-ljGbaZZnXoHZuAgmG_3
 
 class SearchBar extends React.Component{
     render(){
+        return (<div class="SearchBar">
+            <div class="SearchBar-sort-options">
+                <ul>
+                {this.renderSortByOptions()}
+                </ul>
+            </div>
+            <div class="SearchBar-fields">
+                <input placeholder="Search Businesses" />
+                <input placeholder="Where?" />
+            </div>
+            <div class="SearchBar-submit">
+                <a>Let's Go</a>
+            </div>
+        </div>);
 
     }
 
@@ -30,3 +44,5 @@ class SearchBar extends React.Component{
         });
     }
 }
+
+export default  SearchBar;
