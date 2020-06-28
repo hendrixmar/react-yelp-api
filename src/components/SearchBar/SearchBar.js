@@ -21,9 +21,9 @@ c8qhziAQNNpFhArSbb_XyGKxfAE9r2I6QZX6i4UDeH6s8_n5KGyHcEZZZGlK-ljGbaZZnXoHZuAgmG_3
 class SearchBar extends React.Component{
     render(){
         return (<div class="SearchBar">
-            <div class="SearchBar-sort-options">
+    <div class="SearchBar-sort-options">
                 <ul>
-                {this.renderSortByOptions()}
+    {this.renderSortByOptions()}
                 </ul>
             </div>
             <div class="SearchBar-fields">
